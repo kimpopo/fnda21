@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROUTINE O 통합 홍보 실행 기획서</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Pretendard & Playfair Display -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        routine: {
+                            beige: '#F5F2EB',
+                            darkBeige: '#EBE5D8',
+                            sage: '#7A8B79',
+                            darkSage: '#5C6A5A',
+                            wood: '#8C6D53',
+                            darkWood: '#5A4331',
+                            charcoal: '#2C2A29',
+                            softGray: '#F9F8F6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Pretendard', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #F9F8F6;
+            color: #2C2A29;
+        }
+        .serif-title {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F5F2EB;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #7A8B79;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-routine-softGray text-routine-charcoal antialiased selection:bg-routine-sage selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-routine-beige/90 backdrop-blur-md border-b border-routine-darkBeige/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="serif-title text-2xl font-bold tracking-wider text-routine-darkWood">ROUTINE O</span>
+                <span class="hidden sm:inline-block text-xs uppercase tracking-widest px-2 py-1 bg-routine-sage/20 text-routine-darkSage rounded-full font-medium">Move. Eat. Flow.</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-routine-charcoal/80">
+                <a href="#overview" class="hover:text-routine-wood transition-colors">01. 홍보 개요</a>
+                <a href="#materials" class="hover:text-routine-wood transition-colors">02. 홍보물 3종</a>
+                <a href="#channels" class="hover:text-routine-wood transition-colors">03. 채널별 계획</a>
+                <a href="#checklist" class="hover:text-routine-wood transition-colors">04. 실행 체크리스트</a>
+                <a href="#effect" class="hover:text-routine-wood transition-colors">05. 고객 여정 및 기대효과</a>
+            </nav>
+            <button onclick="openSurveyModal()" class="px-5 py-2.5 bg-routine-wood text-white text-sm font-medium rounded-full shadow-sm hover:bg-routine-darkWood transition-all transform hover:-translate-y-0.5">
+                수요조사 구글폼 생성기
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-routine-beige py-24 md:py-32 px-6 overflow-hidden border-b border-routine-darkBeige">
+        <div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-routine-sage/10 blur-3xl pointer-events-none"></div>
+        <div class="absolute -left-24 -bottom-24 w-96 h-96 rounded-full bg-routine-wood/10 blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-routine-sage/15 text-routine-darkSage text-xs uppercase tracking-widest font-semibold mb-6">
+                Integrated Launch Campaign
+            </div>
+            <h1 class="serif-title text-4xl md:text-6xl font-bold text-routine-darkWood tracking-tight mb-6 leading-tight">
+                시간을 아껴, 나의 취향과 여유를 더하다
+            </h1>
+            <p class="text-lg md:text-xl text-routine-charcoal/80 mb-10 max-w-2xl mx-auto leading-relaxed font-light">
+                출근 전 운동과 건강한 식사를 함께 관리하는 20~30대 직장인의 아침 동선을 하나의 흐름으로 연결하는 <strong class="font-semibold text-routine-wood">ROUTINE O</strong>의 오픈 런칭 캠페인 기획서입니다.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#materials" class="px-8 py-4 bg-routine-darkWood text-white font-medium rounded-full shadow hover:bg-routine-wood transition-all">
+                    홍보물 3종 자세히 보기
+                </a>
+                <a href="#checklist" class="px-8 py-4 bg-white/80 border border-routine-darkBeige text-routine-charcoal font-medium rounded-full shadow-sm hover:bg-white transition-all">
+                    오픈 체크리스트 확인
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main class="max-w-6xl mx-auto px-6 py-16 space-y-24">
+
+        <!-- 01. 홍보 기획 개요 -->
+        <section id="overview" class="scroll-mt-28">
+            <div class="flex items-center gap-4 mb-8">
+                <span class="serif-title text-3xl md:text-4xl font-bold text-routine-wood">01</span>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold tracking-tight">홍보 기획 개요</h2>
+                    <p class="text-sm text-routine-charcoal/60">Project Overview & Core Strategy</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-routine-darkBeige/60">
+                    <span class="text-xs uppercase tracking-wider text-routine-sage font-bold block mb-2">Project Name</span>
+                    <h3 class="text-xl font-bold mb-3">ROUTINE O 통합 런칭 캠페인</h3>
+                    <p class="text-sm text-routine-charcoal/70 leading-relaxed">단순한 시설 배치가 아닌, 아침 시간의 '끊김'을 줄이는 유기농 경험 제안</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-routine-darkBeige/60">
+                    <span class="text-xs uppercase tracking-wider text-routine-sage font-bold block mb-2">Core Slogan</span>
+                    <h3 class="text-xl font-bold mb-3 serif-title">Move. Eat. Flow.</h3>
+                    <p class="text-sm text-routine-charcoal/70 leading-relaxed">운동(Move)과 식사(Eat)가 매끄럽게 이어지는(Flow) 새로운 라이프스타일 루틴</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-routine-darkBeige/60">
+                    <span class="text-xs uppercase tracking-wider text-routine-sage font-bold block mb-2">Target Audience</span>
+                    <h3 class="text-xl font-bold mb-3">20~30대 직장인</h3>
+                    <p class="text-sm text-routine-charcoal/70 leading-relaxed">아침 운동을 원하지만 이동·주문 대기·출근 지연에 스트레스를 느끼는 스마트한 직장인</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-routine-darkBeige/60 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-routine-sage"></span>
+                        핵심 고객 경험 (Core Experience)
+                    </h3>
+                    <p class="text-routine-charcoal/80 leading-relaxed mb-6">
+                        기능을 개별 나열하는 방식에서 벗어나, 직장인이 실제로 겪는 <span class="bg-routine-beige px-1.5 py-0.5 rounded font-medium text-routine-wood">‘운동 후 식사를 기다리다 출근이 촉박해지는 순간’</span>을 공략합니다.
+                    </p>
+                    <div class="p-4 bg-routine-beige/60 rounded-xl border border-routine-darkBeige text-sm font-medium text-routine-darkWood">
+                        ✨ 2F 헬스장 ➔ 운동/샤워 중 앱 사전 주문 ➔ 조리 완료 알림 ➔ 1F F&B 즉시 픽업 ➔ 여유로운 출근
+                    </div>
+                </div>
+                <div class="bg-routine-softGray p-6 rounded-2xl border border-routine-darkBeige/40">
+                    <h4 class="font-bold mb-3 text-sm text-routine-sage uppercase tracking-wider">통합 캠페인 전략</h4>
+                    <ul class="space-y-3 text-sm text-routine-charcoal/80">
+                        <li class="flex items-start gap-2">
+                            <span class="text-routine-wood font-bold">01</span>
+                            <span><strong>포스터 & 카드뉴스:</strong> 서비스 존재 인지 및 핵심 메시지 전달</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-routine-wood font-bold">02</span>
+                            <span><strong>쇼츠 릴스:</strong> 실제 이용 장면을 짧고 강렬하게 직관적 체험</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-routine-wood font-bold">03</span>
+                            <span><strong>O2O 연계:</strong> 모든 접점의 CTA를 앱 사전 예약 주문으로 일원화</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02. 실제 홍보물 3종 제작안 -->
+        <section id="materials" class="scroll-mt-28">
+            <div class="flex items-center gap-4 mb-8">
+                <span class="serif-title text-3xl md:text-4xl font-bold text-routine-wood">02</span>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold tracking-tight">실제 홍보물 3종 제작안</h2>
+                    <p class="text-sm text-routine-charcoal/60">Instagram Cardnews, Offline A2 Poster & Short-form Reels</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <!-- Card 1: Instagram Cardnews -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-routine-darkBeige/60 flex flex-col">
+                    <div class="bg-routine-beige p-6 border-b border-routine-darkBeige/60">
+                        <span class="text-xs font-semibold text-routine-wood uppercase tracking-wider">Channel 01</span>
+                        <h3 class="text-xl font-bold mt-1">Instagram 카드뉴스 (3장 구성)</h3>
+                    </div>
+                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between text-sm text-routine-charcoal/80">
+                        <div class="space-y-3">
+                            <div class="p-3 bg-routine-softGray rounded-lg">
+                                <strong class="block text-routine-darkWood mb-1">1. HOOK (시작)</strong>
+                                <p class="text-xs text-routine-charcoal/70">"나를 위한 스타일리시한, 루틴 제로." 베이지·세이지 그린 톤으로 바쁜 아침 문제 인지.</p>
+                            </div>
+                            <div class="p-3 bg-routine-softGray rounded-lg">
+                                <strong class="block text-routine-darkWood mb-1">2. PROCESS (구조)</strong>
+                                <p class="text-xs text-routine-charcoal/70">2F GYM ➔ 앱 사전 주문 ➔ 1F F&B 픽업 발자국 그래픽으로 매끄러운 동선 시각화.</p>
+                            </div>
+                            <div class="p-3 bg-routine-softGray rounded-lg">
+                                <strong class="block text-routine-darkWood mb-1">3. CTA (행동유도)</strong>
+                                <p class="text-xs text-routine-charcoal/70">"샤워 시간도 아껴주는 스마트 오더." 첫 예약 주문 유도 및 저장·공유.</p>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-routine-darkBeige/40 text-xs text-routine-sage font-semibold">
+                            목표: 브랜드 인지 및 앱 유입·저장
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Offline A2 Poster -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-routine-darkBeige/60 flex flex-col">
+                    <div class="bg-routine-beige p-6 border-b border-routine-darkBeige/60">
+                        <span class="text-xs font-semibold text-routine-wood uppercase tracking-wider">Channel 02</span>
+                        <h3 class="text-xl font-bold mt-1">오프라인 A2 포스터</h3>
+                    </div>
+                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between text-sm text-routine-charcoal/80">
+                        <div class="space-y-3">
+                            <div>
+                                <strong class="block text-routine-darkWood mb-1">메인 헤드카피</strong>
+                                <p class="text-xs text-routine-charcoal/70 italic bg-routine-softGray p-2.5 rounded">"계획한 대로 차질 없이, 나만의 완벽한 아침 루틴 ROUTINE O"</p>
+                            </div>
+                            <div>
+                                <strong class="block text-routine-darkWood mb-1">비주얼 & 레이아웃</strong>
+                                <p class="text-xs text-routine-charcoal/70">웜 베이지, 세이지 그린, 우디 브라운 톤의 여백 중심 라이프스타일 광고 무드.</p>
+                            </div>
+                            <div>
+                                <strong class="block text-routine-darkWood mb-1">부착 위치 및 핵심 액션</strong>
+                                <p class="text-xs text-routine-charcoal/70">헬스장 입구, F&B 입구, 에스컬레이터 동선에 부착하여 즉시 QR 스캔 유도.</p>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-routine-darkBeige/40 text-xs text-routine-sage font-semibold">
+                            목표: 현장 인지 및 QR 즉시 예약 전환
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Short-form Reels (With 9:16 Video Player Button) -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-routine-darkBeige/60 flex flex-col">
+                    <div class="bg-routine-beige p-6 border-b border-routine-darkBeige/60 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs font-semibold text-routine-wood uppercase tracking-wider">Channel 03</span>
+                            <h3 class="text-xl font-bold mt-1">Instagram 쇼츠 / 릴스</h3>
+                        </div>
+                        <span class="px-2.5 py-1 bg-routine-sage/20 text-routine-darkSage rounded-full text-xs font-bold">9:16</span>
+                    </div>
+                    <div class="p-6 space-y-4 flex-1 flex flex-col justify-between text-sm text-routine-charcoal/80">
+                        <div class="space-y-3">
+                            <div class="p-3 bg-routine-softGray rounded-lg">
+                                <strong class="block text-routine-darkWood mb-1">0-3초 (Hook)</strong>
+                                <p class="text-xs text-routine-charcoal/70">운동 후 시계 확인하며 마음 급해지는 직장인의 현실 공감 상황 제시.</p>
+                            </div>
+                            <div class="p-3 bg-routine-softGray rounded-lg">
+                                <strong class="block text-routine-darkWood mb-1">3-9초 (Solution)</strong>
+                                <p class="text-xs text-routine-charcoal/70">2층 샤워 중 스마트폰 터치 한 번으로 1층 F&B 메뉴 주문 완료 화면 연출.</p>
+                            </div>
+                            <div class="p-3 bg-routine-softGray rounded-lg">
+                                <strong class="block text-routine-darkWood mb-1">9-15초 (CTA)</strong>
+                                <p class="text-xs text-routine-charcoal/70">대기 없이 곧바로 픽업해 여유롭게 출근하는 모습과 앱 예약 버튼 노출.</p>
+                            </div>
+                        </div>
+
+                        <!-- Video Trigger Button -->
+                        <div class="pt-4 border-t border-routine-darkBeige/40">
+                            <button onclick="openVideoModal()" class="w-full py-3 px-4 bg-routine-wood hover:bg-routine-darkWood text-white text-sm font-semibold rounded-xl shadow transition-all flex items-center justify-center gap-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.84A1.5 1.5 0 004 4.11v11.78a1.5 1.5 0 002.3 1.27l9.34-5.89a1.5 1.5 0 000-2.54L6.3 2.84z"/></svg>
+                                1조 영상.mp4 재생 (9:16 쇼츠)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03. 채널별 집행 계획 및 O2O 구조 -->
+        <section id="channels" class="scroll-mt-28">
+            <div class="flex items-center gap-4 mb-8">
+                <span class="serif-title text-3xl md:text-4xl font-bold text-routine-wood">03</span>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold tracking-tight">채널별 집행 계획 및 O2O 연계</h2>
+                    <p class="text-sm text-routine-charcoal/60">Execution Timeline & O2O Connection Strategy</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-routine-darkBeige/60 overflow-x-auto mb-8">
+                <table class="w-full text-left border-collapse text-sm">
+                    <thead>
+                        <tr class="border-b border-routine-darkBeige text-routine-darkWood font-semibold">
+                            <th class="py-4 px-4">홍보물</th>
+                            <th class="py-4 px-4">집행 채널</th>
+                            <th class="py-4 px-4">집행 시점</th>
+                            <th class="py-4 px-4">핵심 목적</th>
+                            <th class="py-4 px-4">CTA / 기대 행동</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-routine-darkBeige/40 text-routine-charcoal/80">
+                        <tr>
+                            <td class="py-4 px-4 font-semibold text-routine-wood">카드뉴스</td>
+                            <td class="py-4 px-4">Instagram 피드·스토리</td>
+                            <td class="py-4 px-4">오픈 전 티징 + 당일 공개</td>
+                            <td class="py-4 px-4">브랜드 및 서비스 구조 이해</td>
+                            <td class="py-4 px-4 text-xs bg-routine-softGray p-2 rounded">프로필 링크 ➔ 앱 유입·저장·공유</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-semibold text-routine-wood">포스터</td>
+                            <td class="py-4 px-4">헬스장·F&B 입구, 에스컬레이터</td>
+                            <td class="py-4 px-4">오픈 전 부착 ~ 오픈 후 유지</td>
+                            <td class="py-4 px-4">현장 인지 + 즉시 유입</td>
+                            <td class="py-4 px-4 text-xs bg-routine-softGray p-2 rounded">QR 스캔 ➔ 앱 / 예약 주문</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-semibold text-routine-wood">쇼츠 (릴스)</td>
+                            <td class="py-4 px-4">Instagram Reels 등 숏폼</td>
+                            <td class="py-4 px-4">오픈 당일 집중 공개</td>
+                            <td class="py-4 px-4">사용 장면 체험 및 이용 욕구 형성</td>
+                            <td class="py-4 px-4 text-xs bg-routine-softGray p-2 rounded">CTA 클릭 ➔ 첫 예약 주문</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bg-routine-beige/60 p-8 rounded-2xl border border-routine-darkBeige flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <h3 class="font-bold text-lg mb-2 text-routine-darkWood">🔗 온라인과 오프라인의 완벽한 O2O 순환 구조</h3>
+                    <p class="text-sm text-routine-charcoal/70 leading-relaxed">
+                        온라인에서는 카드뉴스와 쇼츠의 CTA를 앱 이용으로 연결하고, 오프라인에서는 포스터 QR을 동일한 예약 진입점으로 연결합니다. 사용자는 어떤 채널에서 첫 접점을 가지든 일관된 여정을 경험합니다.
+                    </p>
+                </div>
+                <button onclick="openSurveyModal()" class="whitespace-nowrap px-6 py-3 bg-routine-wood text-white font-medium rounded-full shadow hover:bg-routine-darkWood transition-all">
+                    설문 코드 생성하기
+                </button>
+            </div>
+        </section>
+
+        <!-- 04. 오픈 단계별 실행 체크리스트 -->
+        <section id="checklist" class="scroll-mt-28">
+            <div class="flex items-center gap-4 mb-8">
+                <span class="serif-title text-3xl md:text-4xl font-bold text-routine-wood">04</span>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold tracking-tight">오픈 단계별 실행 체크리스트</h2>
+                    <p class="text-sm text-routine-charcoal/60">Pre-Open, Open Day & Post-Open Execution Tasks</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- OPEN 전 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-routine-darkBeige/60">
+                    <span class="px-3 py-1 bg-routine-wood/10 text-routine-wood rounded-full text-xs font-bold uppercase tracking-wider inline-block mb-4">Phase 1. OPEN 전</span>
+                    <ul class="space-y-3 text-sm text-routine-charcoal/80">
+                        <li class="flex items-start gap-2 pb-2 border-b border-routine-darkBeige/30">
+                            <input type="checkbox" class="mt-1 accent-routine-wood">
+                            <span>홍보물 3종 최종 제작 및 오탈자 검수</span>
+                        </li>
+                        <li class="flex items-start gap-2 pb-2 border-b border-routine-darkBeige/30">
+                            <input type="checkbox" class="mt-1 accent-routine-wood">
+                            <span>SNS 업로드 일정 및 게시 문구 확정</span>
+                        </li>
+                        <li class="flex items-start gap-2 pb-2 border-b border-routine-darkBeige/30">
+                            <input type="checkbox" class="mt-1 accent-routine-wood">
+                            <span>A2 포스터 출력 및 동선 부착 위치 확정</span>
+                        </li>
+                        <li class="flex items-start gap-2 pb-2 border-b border-routine-darkBeige/30">
+                            <input type="checkbox" class="mt-1 accent-routine-wood">
+                            <span>QR코드 및 앱 연결 진입 정상 작동 테스트</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1 accent-routine-wood">
+                            <span>첫 예약 혜택 및 쿠폰 세팅 완료</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- OPEN 당일 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-routine-darkBeige/60">
+                    <span class="px-3 py-1 bg-routine-sage/20 text-routine-darkSage rounded-full text-xs font-bold uppercase tracking-wider inline-block mb-4">Phase 2. OPEN 당일</span>
+                    <ul class="space-y-3 text-sm text-routine-charcoal/80">
+                        <li class="flex items-start gap-2 pb-2 border-b border-routine-darkBeige/30">
+                            <input type="checkbox" class="mt-1 accent-routine-wood">
+                            <span>카드뉴스 피드·스토리 동시 노출 개시</span>
+                        </li>
+                        <li class="flex items-start gap-2 pb-2 border-b border-routine-darkBeige/30">
+                            <input type="checkbox" class="mt-1 accent-routine-wood">
+                            <span>쇼츠/릴스 엔드카드 CTA 링크 확인 공개</span>
+                        </li>
+                        <li class="flex items-start gap-2 pb-2 border-b border-routine-darkBeige/30">
+                            <input type="checkbox" class="mt-1 accent-routine-wood">
+                            <span>오프라인 포스터 전면 노출 및 QR 접근성 점검</span>
+                        </li>
+                        <li class="flex items-start gap-2 pb-2 border-b border-routine-darkBeige/30">
+                            <input type="checkbox" class="mt-1 accent-routine-wood">
+                            <span>실사용자 동선 내 QR 및 앱 재확인</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1 accent-routine-wood">
+                            <span>현장 이용자 반응 및 픽업 병목 기록</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- OPEN 후 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-routine-darkBeige/60">
+                    <span class="px-3 py-1 bg-routine-darkWood/10 text-routine-darkWood rounded-full text-xs font-bold uppercase tracking-wider inline-block mb-4">Phase 3. OPEN 후</span>
+                    <ul class="space-y-3 text-sm text-routine-charcoal/80">
+                        <li class="flex items-start gap-2 pb-2 border-b border-routine-darkBeige/30">
+                            <input type="checkbox" class="mt-1 accent-routine-wood">
+                            <span>카드뉴스 도달·저장·공유 지표 분석</span>
+                        </li>
+                        <li class="flex items-start gap-2 pb-2 border-b border-routine-darkBeige/30">
+                            <input type="checkbox" class="mt-1 accent-routine-wood">
+                            <span>쇼츠 조회수 및 이탈 구간 시청 유지율 확인</span>
+                        </li>
+                        <li class="flex items-start gap-2 pb-2 border-b border-routine-darkBeige/30">
+                            <input type="checkbox" class="mt-1 accent-routine-wood">
+                            <span>오프라인 QR 유입 수 및 앱 다운로드 전환 측정</span>
+                        </li>
+                        <li class="flex items-start gap-2 pb-2 border-b border-routine-darkBeige/30">
+                            <input type="checkbox" class="mt-1 accent-routine-wood">
+                            <span>실제 이용자 후기 및 UGC 수집 및 리포스팅</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1 accent-routine-wood">
+                            <span>개선사항 정리 및 후속 운영 반영</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05. 고객 여정 및 기대 효과 -->
+        <section id="effect" class="scroll-mt-28">
+            <div class="flex items-center gap-4 mb-8">
+                <span class="serif-title text-3xl md:text-4xl font-bold text-routine-wood">05</span>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold tracking-tight">통합 고객 여정 및 기대 효과</h2>
+                    <p class="text-sm text-routine-charcoal/60">Customer Journey Flow & Expected Impact</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-routine-darkBeige/60 mb-12">
+                <div class="grid grid-cols-2 md:grid-cols-6 gap-4 text-center">
+                    <div class="p-4 bg-routine-softGray rounded-xl border border-routine-darkBeige/40">
+                        <span class="block text-xs font-bold text-routine-wood mb-1">STEP 01</span>
+                        <h4 class="font-bold text-sm mb-1">인지</h4>
+                        <p class="text-xs text-routine-charcoal/60">포스터·카드뉴스</p>
+                    </div>
+                    <div class="p-4 bg-routine-softGray rounded-xl border border-routine-darkBeige/40">
+                        <span class="block text-xs font-bold text-routine-wood mb-1">STEP 02</span>
+                        <h4 class="font-bold text-sm mb-1">서비스 이해</h4>
+                        <p class="text-xs text-routine-charcoal/60">쇼츠 릴스 체험</p>
+                    </div>
+                    <div class="p-4 bg-routine-softGray rounded-xl border border-routine-darkBeige/40">
+                        <span class="block text-xs font-bold text-routine-wood mb-1">STEP 03</span>
+                        <h4 class="font-bold text-sm mb-1">앱 유입</h4>
+                        <p class="text-xs text-routine-charcoal/60">QR 및 SNS CTA</p>
+                    </div>
+                    <div class="p-4 bg-routine-softGray rounded-xl border border-routine-darkBeige/40">
+                        <span class="block text-xs font-bold text-routine-wood mb-1">STEP 04</span>
+                        <h4 class="font-bold text-sm mb-1">예약 주문</h4>
+                        <p class="text-xs text-routine-charcoal/60">스마트 오더 실행</p>
+                    </div>
+                    <div class="p-4 bg-routine-softGray rounded-xl border border-routine-darkBeige/40">
+                        <span class="block text-xs font-bold text-routine-wood mb-1">STEP 05</span>
+                        <h4 class="font-bold text-sm mb-1">픽업 경험</h4>
+                        <p class="text-xs text-routine-charcoal/60">F&B 즉시 수령</p>
+                    </div>
+                    <div class="p-4 bg-routine-softGray rounded-xl border border-routine-darkBeige/40">
+                        <span class="block text-xs font-bold text-routine-wood mb-1">STEP 06</span>
+                        <h4 class="font-bold text-sm mb-1">재방문 확산</h4>
+                        <p class="text-xs text-routine-charcoal/60">후기 및 UGC 순환</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-8 border-t border-routine-darkBeige/40">
+                    <h3 class="font-bold text-lg mb-3 text-routine-darkWood">디자인 디렉션 (Design Direction)</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-3 py-1.5 bg-routine-beige rounded-full text-xs font-semibold text-routine-darkWood border border-routine-darkBeige">Warm Beige · Sage Green · Woody Brown</span>
+                        <span class="px-3 py-1.5 bg-routine-beige rounded-full text-xs font-semibold text-routine-darkWood border border-routine-darkBeige">여백 중심 감각적 라이프스타일 무드</span>
+                        <span class="px-3 py-1.5 bg-routine-beige rounded-full text-xs font-semibold text-routine-darkWood border border-routine-darkBeige">큰 헤드카피와 간결한 정보 구조</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-routine-darkWood text-routine-beige py-12 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <span class="serif-title text-2xl font-bold tracking-wider text-white">ROUTINE O</span>
+                <p class="text-xs text-routine-beige/70 mt-1">Move. Eat. Flow. 시간을 아껴, 나의 취향과 여유를 더하다</p>
+            </div>
+            <div class="flex items-center gap-6 text-sm">
+                <button onclick="openSurveyModal()" class="text-routine-beige hover:text-white transition-colors underline underline-offset-4">구글 폼 자동생성 스크립트 보기</button>
+                <a href="#overview" class="text-routine-beige hover:text-white transition-colors">맨 위로 이동</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal (9:16 Shorts Player for 1조 영상.mp4) -->
+    <div id="videoModal" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="relative w-full max-w-sm bg-routine-charcoal rounded-3xl overflow-hidden shadow-2xl border border-routine-darkBeige/40 flex flex-col items-center">
+            <!-- Modal Header -->
+            <div class="w-full px-5 py-4 bg-routine-darkWood/80 flex items-center justify-between text-white border-b border-white/10">
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-routine-sage animate-pulse"></span>
+                    <h3 class="font-bold text-sm tracking-wide">1조 영상.mp4 (9:16 쇼츠)</h3>
+                </div>
+                <button onclick="closeVideoModal()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center font-bold text-white transition-all">✕</button>
+            </div>
+
+            <!-- 9:16 Vertical Video Container -->
+            <div class="w-full aspect-[9/16] bg-black relative flex items-center justify-center overflow-hidden">
+                <!-- HTML5 Video element with fallback / placeholder demo -->
+                <video id="shortsVideo" controls autoplay muted class="w-full h-full object-cover" poster="https://placehold.co/1080x1920/2C2A29/F5F2EB?text=ROUTINE+O+Shorts">
+                    <!-- Placeholder sample source or user file -->
+                    <source src="1조 영상.mp4" type="video/mp4">
+                    브라우저가 비디오 재생을 지원하지 않습니다.
+                </video>
+                <!-- Simulation text if video file isn't found locally -->
+                <div id="videoFallbackMsg" class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-routine-darkWood/90 text-routine-beige hidden">
+                    <span class="text-4xl mb-3">🎬</span>
+                    <h4 class="font-bold text-base mb-1">1조 영상.mp4</h4>
+                    <p class="text-xs text-routine-beige/80 mb-4">동일한 폴더에 '1조 영상.mp4' 파일을 두시면 정상 재생됩니다.</p>
+                </div>
+            </div>
+
+            <!-- Video Footer Info -->
+            <div class="w-full p-4 bg-routine-charcoal text-xs text-routine-beige/70 text-center border-t border-white/10">
+                Move. Eat. Flow. 출근 전 아침 루틴 쇼츠 캠페인 영상
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Apps Script Modal -->
+    <div id="surveyModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl p-8 border border-routine-darkBeige">
+            <div class="flex items-center justify-between mb-6 pb-4 border-b border-routine-darkBeige/60">
+                <div>
+                    <h3 class="text-xl font-bold text-routine-darkWood">Google Apps Script 생성기</h3>
+                    <p class="text-xs text-routine-charcoal/60">기획서 기반 5선 설문 폼 자동 생성 코드</p>
+                </div>
+                <button onclick="closeSurveyModal()" class="w-9 h-9 rounded-full bg-routine-softGray hover:bg-routine-darkBeige/60 flex items-center justify-center font-bold text-routine-charcoal">✕</button>
+            </div>
+
+            <p class="text-sm text-routine-charcoal/80 mb-4 leading-relaxed">
+                아래 코드를 복사하여 <a href="https://script.google.com/" target="_blank" class="text-routine-wood underline font-semibold">Google Apps Script</a> 편집기에 붙여넣고 실행하시면 구글 폼이 자동으로 생성됩니다.
+            </p>
+
+            <div class="relative mb-6">
+                <pre class="bg-routine-charcoal text-routine-beige text-xs p-4 rounded-xl overflow-x-auto font-mono max-h-72 leading-relaxed"><code>function createRoutineOSurvey() {
+  var form = FormApp.create('[ROUTINE O] 잠재 고객 수요 및 홍보기획서 검증 설문');
+  
+  form.setDescription(
+    '본 설문은 ROUTINE O의 핵심 가치(시간 단축, 취향과 여유)를 검증하고 향후 수요를 극대화하기 위한 설문입니다.\\n\\n' +
+    '• 핵심 콘셉트: 시간을 아껴, 나의 취향과 여유를 더하다 (Move. Eat. Flow.)'
+  );
+
+  // [문항 1] 아침 시간대 불편함 (Pain Point)
+  var q1 = form.addMultipleChoiceItem();
+  q1.setTitle('[문항 1] 출근 전 아침 운동 및 일정 소화 시 가장 큰 불편함')
+    .setChoices([
+      q1.createChoice('운동 후 식사를 기다리느라 출근 시간이 너무 촉박해진다.'),
+      q1.createChoice('이동 및 주문 대기 과정에서 불필요한 시간과 스트레스가 발생한다.'),
+      q1.createChoice('건강식을 챙겨 먹고 싶지만 동선이 복잡하고 번거롭다.'),
+      q1.createChoice('나만의 바쁜 루틴에 딱 맞는 맞춤형 서비스를 찾기 어렵다.')
+    ]).setRequired(true);
+
+  // [문항 2] 서비스 경험 매력도 평가
+  var q2 = form.addScaleItem();
+  q2.setTitle("[문항 2] 'ROUTINE O' 서비스 경험의 매력도")
+    .setHelpText("2층 헬스장에서 운동/샤워 중 앱으로 미리 주문하고, 1층 F&B에서 대기 없이 픽업하는 경험의 매력도")
+    .setBounds(1, 5).setLabels('전혀 매력적이지 않다', '매력적이다').setRequired(true);
+
+  // [문항 3] 향후 수요 확장을 위한 니즈 파악
+  var q3 = form.addCheckboxItem();
+  q3.setTitle('[문항 3] 가장 기대하거나 이용하고 싶은 기능(또는 혜택)')
+    .setChoices([
+      q3.createChoice('대기 시간을 완벽히 없애주는 빠르고 매끄러운 앱 사전 주문 프로세스'),
+      q3.createChoice('첫 이용 할인 및 비용 부담을 낮춰주는 특별 리워드 혜택'),
+      q3.createChoice('내 취향에 맞춘 건강식 및 운동 루틴 추천 서비스'),
+      q3.createChoice('실제 이용자들의 생생한 후기와 SNS 인증 콘텐츠 (UGC)')
+    ]).setRequired(true);
+
+  // [문항 4] 이용 의향 및 가격 민감도
+  var q4 = form.addMultipleChoiceItem();
+  q4.setTitle('[문항 4] 서비스 정기 이용 의향 및 가격 메리트')
+    .setChoices([
+      q4.createChoice('첫 이용 시 파격적인 할인 쿠폰이나 혜택이 제공된다면 바로 써보겠다.'),
+      q4.createChoice('일반 카페/식당과 비슷한 합리적인 가격대라면 출근길 루틴으로 정기 이용하겠다.'),
+      q4.createChoice('확실하게 시간을 아껴줄 수만 있다면 약간의 프리미엄 비용도 지불할 의향이 있다.'),
+      q4.createChoice('아직은 잘 모르겠으며, 실제 이용 후기를 조금 더 지켜보고 싶다.')
+    ]).setRequired(true);
+
+  // [문항 5] 추가 개선 및 신규 메뉴/기능 제안
+  var q5 = form.addParagraphTextItem();
+  q5.setTitle('[문항 5] 추가 개선 및 신규 메뉴/기능 제안')
+    .setHelpText('ROUTINE O가 완벽한 아침 루틴 공간이 되기 위해 바라는 점을 적어주세요.')
+    .setRequired(false);
+
+  Logger.log('설문지 URL: ' + form.getPublishedUrl());
+}</code></pre>
+            </div>
+
+            <div class="flex justify-end gap-3">
+                <button onclick="closeSurveyModal()" class="px-6 py-2.5 bg-routine-softGray text-routine-charcoal font-medium rounded-full hover:bg-routine-darkBeige/60 transition-all text-sm">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openSurveyModal() {
+            document.getElementById('surveyModal').classList.remove('hidden');
+        }
+        function closeSurveyModal() {
+            document.getElementById('surveyModal').classList.add('hidden');
+        }
+
+        function openVideoModal() {
+            document.getElementById('videoModal').classList.remove('hidden');
+            const video = document.getElementById('shortsVideo');
+            video.play().catch(error => {
+                // If video fails to load (e.g. file missing), show fallback overlay
+                document.getElementById('videoFallbackMsg').classList.remove('hidden');
+            });
+        }
+        function closeVideoModal() {
+            const video = document.getElementById('shortsVideo');
+            video.pause();
+            video.currentTime = 0;
+            document.getElementById('videoModal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
