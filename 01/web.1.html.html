@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROUTINE O - 통합 설문조사 허브</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Pretendard & Playfair Display -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        routine: {
+                            beige: '#F5F2EB',
+                            darkBeige: '#EBE5D8',
+                            sage: '#7A8B79',
+                            darkSage: '#5C6A5A',
+                            wood: '#8C6D53',
+                            darkWood: '#5A4331',
+                            charcoal: '#2C2A29',
+                            softGray: '#F9F8F6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Pretendard', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #F9F8F6;
+            color: #2C2A29;
+        }
+        .serif-title {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-routine-softGray text-routine-charcoal antialiased min-h-screen flex flex-col justify-between selection:bg-routine-sage selection:text-white">
+
+    <!-- Header -->
+    <header class="bg-routine-beige/90 backdrop-blur-md border-b border-routine-darkBeige/50 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="serif-title text-2xl font-bold tracking-wider text-routine-darkWood">ROUTINE O</span>
+                <span class="text-xs uppercase tracking-widest px-2.5 py-1 bg-routine-sage/20 text-routine-darkSage rounded-full font-medium">Survey Hub</span>
+            </div>
+            <a href="index.html" class="text-xs font-semibold text-routine-wood hover:text-routine-darkWood transition-colors flex items-center gap-1.5 bg-routine-beige px-4 py-2 rounded-full border border-routine-darkBeige shadow-sm">
+                ← 기획서 메인으로 돌아가기
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Hero -->
+    <main class="max-w-5xl mx-auto px-6 py-16 flex-1 w-full">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-routine-sage/15 text-routine-darkSage text-xs uppercase tracking-widest font-semibold mb-4">
+                Official Survey Hub
+            </div>
+            <h1 class="serif-title text-3xl md:text-5xl font-bold text-routine-darkWood mb-4 tracking-tight">
+                ROUTINE O 수요조사 아카이브
+            </h1>
+            <p class="text-sm md:text-base text-routine-charcoal/70 leading-relaxed">
+                출근 전 아침 루틴과 공간 이용 행태에 관한 각 설문조사 카드입니다. 클릭하시면 구글 폼 설문지가 새로운 창으로 안전하게 열립니다.
+            </p>
+        </div>
+
+        <!-- Survey Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+            
+            <!-- Card 1 -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScL9nJ4w3hdCmM5NfPbafvYdJfB_LktYnpIUUY7nB9jzg-BWw/viewform" target="_blank" rel="noopener noreferrer" 
+               class="group bg-white rounded-2xl p-7 shadow-sm border border-routine-darkBeige/70 hover:border-routine-sage hover:shadow-md transition-all flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold text-routine-sage uppercase tracking-wider bg-routine-sage/10 px-3 py-1 rounded-full">Survey 01</span>
+                        <span class="text-routine-charcoal/40 group-hover:text-routine-wood group-hover:translate-x-1 transition-all">↗</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-routine-darkWood mb-2 group-hover:text-routine-wood transition-colors">
+                        [ROUTINE 0] 브랜드 론칭 사전 수요 조사
+                    </h3>
+                    <p class="text-xs text-routine-charcoal/60 leading-relaxed">
+                        브랜드 론칭 초기 반응과 잠재 고객의 전반적인 기대치를 파악하기 위한 기초 설문입니다.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-routine-darkBeige/40 flex items-center justify-between text-xs text-routine-wood font-semibold">
+                    <span>구글 폼 참여하기</span>
+                    <span class="group-hover:underline">새 창으로 열기 →</span>
+                </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSewlAIsVkookXbjQRn6myOE_gYBODrFX59GS4__we_8rYRMrQ/viewform" target="_blank" rel="noopener noreferrer" 
+               class="group bg-white rounded-2xl p-7 shadow-sm border border-routine-darkBeige/70 hover:border-routine-sage hover:shadow-md transition-all flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold text-routine-sage uppercase tracking-wider bg-routine-sage/10 px-3 py-1 rounded-full">Survey 02</span>
+                        <span class="text-routine-charcoal/40 group-hover:text-routine-wood group-hover:translate-x-1 transition-all">↗</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-routine-darkWood mb-2 group-hover:text-routine-wood transition-colors">
+                        [ROUTINE O] 잠재 고객 수요 파악 설문
+                    </h3>
+                    <p class="text-xs text-routine-charcoal/60 leading-relaxed">
+                        출근 전 아침 루틴 형성 과정에서의 니즈와 구체적인 선호 기능을 검증합니다.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-routine-darkBeige/40 flex items-center justify-between text-xs text-routine-wood font-semibold">
+                    <span>구글 폼 참여하기</span>
+                    <span class="group-hover:underline">새 창으로 열기 →</span>
+                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScBWuwPGZqPiHdc_kYRER5lAMNWNgcgNDG3Knd81ntVbG7Nqg/viewform" target="_blank" rel="noopener noreferrer" 
+               class="group bg-white rounded-2xl p-7 shadow-sm border border-routine-darkBeige/70 hover:border-routine-sage hover:shadow-md transition-all flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold text-routine-sage uppercase tracking-wider bg-routine-sage/10 px-3 py-1 rounded-full">Survey 03</span>
+                        <span class="text-routine-charcoal/40 group-hover:text-routine-wood group-hover:translate-x-1 transition-all">↗</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-routine-darkWood mb-2 group-hover:text-routine-wood transition-colors">
+                        ROUTINE O 서비스 사전 수요조사
+                    </h3>
+                    <p class="text-xs text-routine-charcoal/60 leading-relaxed">
+                        서비스 도입에 따른 이용 의향과 가격 민감도 및 기대 효과를 측정합니다.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-routine-darkBeige/40 flex items-center justify-between text-xs text-routine-wood font-semibold">
+                    <span>구글 폼 참여하기</span>
+                    <span class="group-hover:underline">새 창으로 열기 →</span>
+                </div>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6POdOgfqTHXN9gjeWkQSPRjPOc_BPBS9sKduYkfLP90T4Rw/viewform" target="_blank" rel="noopener noreferrer" 
+               class="group bg-white rounded-2xl p-7 shadow-sm border border-routine-darkBeige/70 hover:border-routine-sage hover:shadow-md transition-all flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold text-routine-sage uppercase tracking-wider bg-routine-sage/10 px-3 py-1 rounded-full">Survey 04</span>
+                        <span class="text-routine-charcoal/40 group-hover:text-routine-wood group-hover:translate-x-1 transition-all">↗</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-routine-darkWood mb-2 group-hover:text-routine-wood transition-colors">
+                        [ROUTINE 0] 출근 전 아침 루틴 및 복합 공간 이용 행태 조사
+                    </h3>
+                    <p class="text-xs text-routine-charcoal/60 leading-relaxed">
+                        직장인들의 아침 운동 및 식사 동선, 그리고 공간 이용 행태를 심층 분석합니다.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-routine-darkBeige/40 flex items-center justify-between text-xs text-routine-wood font-semibold">
+                    <span>구글 폼 참여하기</span>
+                    <span class="group-hover:underline">새 창으로 열기 →</span>
+                </div>
+            </a>
+
+            <!-- Card 5 (Full width on larger screens or centered) -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScCejJ0_x_gjgYJL-8mLPrVMXJt5o534hPOXcj3XjUbiRuRpw/viewform" target="_blank" rel="noopener noreferrer" 
+               class="group bg-white rounded-2xl p-7 shadow-sm border border-routine-darkBeige/70 hover:border-routine-sage hover:shadow-md transition-all flex flex-col justify-between md:col-span-2">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-bold text-routine-sage uppercase tracking-wider bg-routine-sage/10 px-3 py-1 rounded-full">Survey 05 (Integrated)</span>
+                        <span class="text-routine-charcoal/40 group-hover:text-routine-wood group-hover:translate-x-1 transition-all">↗</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-routine-darkWood mb-2 group-hover:text-routine-wood transition-colors">
+                        [ROUTINE O] 통합 캠페인 심층 검증 설문
+                    </h3>
+                    <p class="text-xs text-routine-charcoal/60 leading-relaxed">
+                        기획서 전반의 가치 제안과 카드뉴스·쇼츠 등 홍보물 효과성 및 최종 선호도를 종합 평가하는 심층 설문입니다.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-routine-darkBeige/40 flex items-center justify-between text-xs text-routine-wood font-semibold">
+                    <span>구글 폼 참여하기</span>
+                    <span class="group-hover:underline">새 창으로 열기 →</span>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-routine-darkWood text-routine-beige py-10 px-6 text-center text-xs">
+        <p class="font-serif text-sm tracking-wider mb-2">ROUTINE O — Move. Eat. Flow.</p>
+        <p class="text-routine-beige/60">시간을 아껴, 나의 취향과 여유를 더하다</p>
+    </footer>
+
+</body>
+</html>
