@@ -70,10 +70,10 @@
                 <a href="#channels" class="hover:text-routine-wood transition-colors">03. 채널별 계획</a>
                 <a href="#checklist" class="hover:text-routine-wood transition-colors">04. 실행 체크리스트</a>
                 <a href="#effect" class="hover:text-routine-wood transition-colors">05. 고객 여정 및 기대효과</a>
+                <a href="./01/web1.html" class="text-routine-wood font-semibold hover:text-routine-darkWood transition-colors flex items-center gap-1">
+                    설문조사 ↗
+                </a>
             </nav>
-            <button onclick="openSurveyModal()" class="px-5 py-2.5 bg-routine-wood text-white text-sm font-medium rounded-full shadow-sm hover:bg-routine-darkWood transition-all transform hover:-translate-y-0.5">
-                수요조사 구글폼 생성기
-            </button>
         </div>
     </header>
 
@@ -325,19 +325,19 @@
             </div>
 
             <div class="bg-routine-beige/60 p-8 rounded-2xl border border-routine-darkBeige flex flex-col md:flex-row items-center justify-between gap-6">
-                <div>
-                    <h3 class="font-bold text-lg mb-2 text-routine-darkWood">🔗 온라인과 오프라인의 완벽한 O2O 순환 구조</h3>
-                    <p class="text-sm text-routine-charcoal/70 leading-relaxed">
-                        온라인에서는 카드뉴스와 쇼츠의 CTA를 앱 이용으로 연결하고, 오프라인에서는 포스터 QR을 동일한 예약 진입점으로 연결합니다. 사용자는 어떤 채널에서 첫 접점을 가지든 일관된 여정을 경험합니다.
-                    </p>
-                </div>
-                <button onclick="openSurveyModal()" class="whitespace-nowrap px-6 py-3 bg-routine-wood text-white font-medium rounded-full shadow hover:bg-routine-darkWood transition-all">
-                    설문 코드 생성하기
-                </button>
+            <div>
+                <h3 class="font-bold text-lg mb-2 text-routine-darkWood">🔗 온라인과 오프라인의 완벽한 O2O 순환 구조</h3>
+                <p class="text-sm text-routine-charcoal/70 leading-relaxed">
+                    온라인에서는 카드뉴스와 쇼츠의 CTA를 앱 이용으로 연결하고, 오프라인에서는 포스터 QR을 동일한 예약 진입점으로 연결합니다. 사용자는 어떤 채널에서 첫 접점을 가지든 일관된 여정을 경험합니다.
+                </p>
             </div>
-        </section>
+            <a href="./01/web1.html" class="whitespace-nowrap px-6 py-3 bg-routine-wood text-white font-medium rounded-full shadow hover:bg-routine-darkWood transition-all inline-flex items-center gap-1.5">
+                설문조사 허브로 이동 ↗
+            </a>
+        </div>
+    </section>
 
-        <!-- 04. 오픈 단계별 실행 체크리스트 -->
+    <!-- 04. 오픈 단계별 실행 체크리스트 -->
         <section id="checklist" class="scroll-mt-28">
             <div class="flex items-center gap-4 mb-8">
                 <span class="serif-title text-3xl md:text-4xl font-bold text-routine-wood">04</span>
@@ -496,7 +496,7 @@
                 <p class="text-xs text-routine-beige/70 mt-1">Move. Eat. Flow. 시간을 아껴, 나의 취향과 여유를 더하다</p>
             </div>
             <div class="flex items-center gap-6 text-sm">
-                <button onclick="openSurveyModal()" class="text-routine-beige hover:text-white transition-colors underline underline-offset-4">구글 폼 자동생성 스크립트 보기</button>
+                <a href="./01/web1.html" class="text-routine-beige hover:text-white transition-colors underline underline-offset-4">설문조사 허브 바로가기 ↗</a>
                 <a href="#overview" class="text-routine-beige hover:text-white transition-colors">맨 위로 이동</a>
             </div>
         </div>
@@ -537,90 +537,7 @@
         </div>
     </div>
 
-    <!-- Google Apps Script Modal -->
-    <div id="surveyModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl p-8 border border-routine-darkBeige">
-            <div class="flex items-center justify-between mb-6 pb-4 border-b border-routine-darkBeige/60">
-                <div>
-                    <h3 class="text-xl font-bold text-routine-darkWood">Google Apps Script 생성기</h3>
-                    <p class="text-xs text-routine-charcoal/60">기획서 기반 5선 설문 폼 자동 생성 코드 (1장형 카드뉴스 연동)</p>
-                </div>
-                <button onclick="closeSurveyModal()" class="w-9 h-9 rounded-full bg-routine-softGray hover:bg-routine-darkBeige/60 flex items-center justify-center font-bold text-routine-charcoal">✕</button>
-            </div>
-
-            <p class="text-sm text-routine-charcoal/80 mb-4 leading-relaxed">
-                아래 코드를 복사하여 <a href="https://script.google.com/" target="_blank" class="text-routine-wood underline font-semibold">Google Apps Script</a> 편집기에 붙여넣고 실행하시면 구글 폼이 자동으로 생성됩니다.
-            </p>
-
-            <div class="relative mb-6">
-                <pre class="bg-routine-charcoal text-routine-beige text-xs p-4 rounded-xl overflow-x-auto font-mono max-h-72 leading-relaxed"><code>function createRoutineOSurvey() {
-  var form = FormApp.create('[ROUTINE O] 잠재 고객 수요 및 홍보기획서 검증 설문');
-  
-  form.setDescription(
-    '본 설문은 ROUTINE O의 1장형 카드뉴스 및 핵심 가치(시간 단축, 취향과 여유)를 검증하고 향후 수요를 극대화하기 위한 설문입니다.\\n\\n' +
-    '• 핵심 콘셉트: 시간을 아껴, 나의 취향과 여유를 더하다 (Move. Eat. Flow.)'
-  );
-
-  // [문항 1] 아침 시간대 불편함 (Pain Point)
-  var q1 = form.addMultipleChoiceItem();
-  q1.setTitle('[문항 1] 출근 전 아침 운동 및 일정 소화 시 가장 큰 불편함')
-    .setChoices([
-      q1.createChoice('운동 후 식사를 기다리느라 출근 시간이 너무 촉박해진다.'),
-      q1.createChoice('이동 및 주문 대기 과정에서 불필요한 시간과 스트레스가 발생한다.'),
-      q1.createChoice('건강식을 챙겨 먹고 싶지만 동선이 복잡하고 번거롭다.'),
-      q1.createChoice('나만의 바쁜 루틴에 딱 맞는 맞춤형 서비스를 찾기 어렵다.')
-    ]).setRequired(true);
-
-  // [문항 2] 서비스 경험 매력도 평가
-  var q2 = form.addScaleItem();
-  q2.setTitle("[문항 2] 'ROUTINE O' 서비스 경험의 매력도")
-    .setHelpText("2층 헬스장에서 운동/샤워 중 앱으로 미리 주문하고, 1층 F&B에서 대기 없이 픽업하는 경험의 매력도")
-    .setBounds(1, 5).setLabels('전혀 매력적이지 않다', '매력적이다').setRequired(true);
-
-  // [문항 3] 향후 수요 확장을 위한 니즈 파악
-  var q3 = form.addCheckboxItem();
-  q3.setTitle('[문항 3] 가장 기대하거나 이용하고 싶은 기능(또는 혜택)')
-    .setChoices([
-      q3.createChoice('대기 시간을 완벽히 없애주는 빠르고 매끄러운 앱 사전 주문 프로세스'),
-      q3.createChoice('첫 이용 할인 및 비용 부담을 낮춰주는 특별 리워드 혜택'),
-      q3.createChoice('내 취향에 맞춘 건강식 및 운동 루틴 추천 서비스'),
-      q3.createChoice('실제 이용자들의 생생한 후기와 SNS 인증 콘텐츠 (UGC)')
-    ]).setRequired(true);
-
-  // [문항 4] 이용 의향 및 가격 민감도
-  var q4 = form.addMultipleChoiceItem();
-  q4.setTitle('[문항 4] 서비스 정기 이용 의향 및 가격 메리트')
-    .setChoices([
-      q4.createChoice('첫 이용 시 파격적인 할인 쿠폰이나 혜택이 제공된다면 바로 써보겠다.'),
-      q4.createChoice('일반 카페/식당과 비슷한 합리적인 가격대라면 출근길 루틴으로 정기 이용하겠다.'),
-      q4.createChoice('확실하게 시간을 아껴줄 수만 있다면 약간의 프리미엄 비용도 지불할 의향이 있다.'),
-      q4.createChoice('아직은 잘 모르겠으며, 실제 이용 후기를 조금 더 지켜보고 싶다.')
-    ]).setRequired(true);
-
-  // [문항 5] 추가 개선 및 신규 메뉴/기능 제안
-  var q5 = form.addParagraphTextItem();
-  q5.setTitle('[문항 5] 추가 개선 및 신규 메뉴/기능 제안')
-    .setHelpText('ROUTINE O가 완벽한 아침 루틴 공간이 되기 위해 바라는 점을 적어주세요.')
-    .setRequired(false);
-
-  Logger.log('설문지 URL: ' + form.getPublishedUrl());
-}</code></pre>
-            </div>
-
-            <div class="flex justify-end gap-3">
-                <button onclick="closeSurveyModal()" class="px-6 py-2.5 bg-routine-softGray text-routine-charcoal font-medium rounded-full hover:bg-routine-darkBeige/60 transition-all text-sm">닫기</button>
-            </div>
-        </div>
-    </div>
-
     <script>
-        function openSurveyModal() {
-            document.getElementById('surveyModal').classList.remove('hidden');
-        }
-        function closeSurveyModal() {
-            document.getElementById('surveyModal').classList.add('hidden');
-        }
-
         function openVideoModal() {
             document.getElementById('videoModal').classList.remove('hidden');
             const video = document.getElementById('shortsVideo');
